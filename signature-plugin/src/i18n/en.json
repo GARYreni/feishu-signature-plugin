@@ -1,0 +1,20 @@
+{
+  "app.title": "Signature",
+  "app.description": "Sign on the canvas and save to current record",
+  "canvas.placeholder": "Sign here",
+  "button.clear": "Clear",
+  "button.save": "Save Signature",
+  "button.saving": "Saving...",
+  "toast.saveSuccess": "Signature saved successfully",
+  "toast.saveFailed": "Failed to save signature",
+  "toast.emptyCanvas": "Please sign on the canvas first",
+  "toast.imageTooBig": "Image too large, please reduce signature area",
+  "error.noRecord": "Please select a record first",
+  "error.noAttachmentField": "No attachment field found. Please add an attachment field to store signatures",
+  "error.noPermission": "You do not have edit permission. Please contact the table admin",
+  "error.convertFailed": "Image conversion failed, please try again",
+  "error.uploadFailed": "File upload failed, please try again",
+  "error.unknown": "An unknown error occurred while saving",
+  "info.existingSignature": "Saved Signature",
+  "info.loading": "Loading..."
+}
