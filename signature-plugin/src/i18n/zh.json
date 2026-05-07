@@ -1,0 +1,20 @@
+{
+  "app.title": "手写签名",
+  "app.description": "在画布上签名并保存到当前记录",
+  "canvas.placeholder": "请在此处签名",
+  "button.clear": "清空",
+  "button.save": "保存签名",
+  "button.saving": "保存中...",
+  "toast.saveSuccess": "签名保存成功",
+  "toast.saveFailed": "签名保存失败",
+  "toast.emptyCanvas": "请先在画布上签名后再保存",
+  "toast.imageTooBig": "签名图片过大，请适当减小签名面积",
+  "error.noRecord": "请先选中一条记录，再使用签名功能",
+  "error.noAttachmentField": "当前表格中没有附件字段，请先添加一个附件类型字段用于存储签名图片",
+  "error.noPermission": "您没有编辑权限，请联系表格管理员",
+  "error.convertFailed": "图片转换失败，请重试",
+  "error.uploadFailed": "文件上传失败，请重试",
+  "error.unknown": "保存签名时发生未知错误",
+  "info.existingSignature": "已保存的签名",
+  "info.loading": "加载中..."
+}
