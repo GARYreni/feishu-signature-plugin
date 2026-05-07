@@ -1,0 +1,39 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+output/
+
+# 临时文件
+*.tmp
+*.log
+test_output.svg
+test_sign.svg
+
+# 环境变量
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel/
+
+# Python
+__pycache__/
+*.pyc
+
+# 飞书文档（二进制）
+*.docx
+*.zip
+!signature-field-shortcut/output/output.zip
+!signature-plugin/dist.zip
