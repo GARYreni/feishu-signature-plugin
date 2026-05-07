@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="200" height="200"
+     viewBox="0 0 200 200">
+  <defs>
+    <!-- 墨水渗透滤镜 -->
+    <filter id="inkEffect" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5"
+                         xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="0.3" result="blurred" />
+      <feMerge>
+        <feMergeNode in="blurred" />
+        <feMergeNode in="SourceGraphic" opacity="0.85" />
+      </feMerge>
+    </filter>
+    <!-- 阴影效果 -->
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- 透明背景 -->
+  <rect width="100%" height="100%" fill="transparent" />
+
+  <!-- 签名下划线装饰 -->
+  
+    <path d="M 32.4 175
+             Q 71.2 185,
+               100 180
+             T 167.6 175"
+          fill="none" stroke="rgba(26,86,219,0.15)" stroke-width="2"
+          stroke-linecap="round" opacity="0.5" />
+
+  <!-- 签名文字主体 -->
+  <text x="100" y="160"
+        font-family="'Segoe Script', 'Brush Script MT', 'Apple Chancery', 'Comic Sans MS', 'KaiTi', 'STKaiti', cursive, sans-serif"
+        font-size="64px"
+        font-style="italic"
+        font-weight="500"
+        fill="rgb(26,86,219)"
+        text-anchor="middle"
+        dominant-baseline="alphabetic"
+        letter-spacing="2"
+        transform="rotate(-8, 100, 160)"
+        filter="url(#inkEffect)"
+        style="paint-order: stroke fill;
+               stroke: rgba(26,86,219,0.15);
+               stroke-width: 1.5;
+               stroke-linejoin: round;">
+    张三
+  </text>
+</svg>
